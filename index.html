@@ -1,195 +1,202 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./Style.css" />
-  </head>
-  <body>
-    <header>
-      <header class="main">
-        <div class="header">
-          <nav class="navbar">
-            <a class="nav-logo"> Blogr</a>
-            <ul class="nav-menu">
-              <li class="dropdown nav-item-dropdow">
-                <button class="dropbtn">
-                  <span> product <i class="fa fa-caret-down"></i></span>
-                </button>
-                <div class="dropdown-content">
-                  <a class="nav-link"  href="#">Link 1</a>
-                  <a class="nav-link" href="#">Link 2</a>
-                  <a class="nav-link" href="#">Link 3</a>
-                </div>
-              </li>
-              <li class="dropdown nav-item-dropdow">
-                <button class="dropbtn">
-                  category
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a class="nav-link" href="#">Link 1</a>
-                  <a class="nav-link" href="#">Link 2</a>
-                  <a class="nav-link" href="#">Link 3</a>
-                </div>
-              </li>
-              <li class="dropdown nav-item-dropdown">
-                <button class="dropbtn">
-                  connection
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a class="nav-link" href="#">Link 1</a>
-                  <a class="nav-link" href="#">Link 2</a>
-                  <a class="nav-link" href="#">Link 3</a>
-                </div>
-              </li>
-             
-            </ul>
-            <div class="login">
-              <a class="nav-link" href="#login">login</a>
-              <a href="#signup" class="signup nav-link">signup</a>
-              <a class="nav-link" href="javascript:void(0);" class="icon">
-              </a>
-            </div>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-
-            </div>
-          </nav>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./Style.css">
   
-          <div class="intro">
-            <h1>A modern publishing platform</h1>
-            <p id="msg">Grow your audiance and build your online brand</p>
-            <div class="button">
-              <a href="#" class="free">start for free</a>
-              <a href="#" class="more">Learn more</a>
-            </div>
-          </div>
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; z-index: 100; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <img src="./images/bg-pattern-intro.svg" alt="" class="header-bg">
+    <nav class="nav flex" id="nav">
+      <img src="./images/icon-hamburger.svg" alt="" class="humberger">
+      <div class="nav_logo">
+        <img src="./images/logo.svg" alt="Blogger page" class="main-logo">
+      </div>
+      <div class="nav_one flex">
+        <ul class="nav_list flex">
+          <li class="list">
+            <h5 class="open_list">
+              <small>Product</small>
+              <i class="fas fa-chevron-down"></i>
+            </h5>
+            <ul class="sub_list">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </li>
+          <li class="list">
+            <h5 class="open_list">
+              <small>Company</small>
+              <i class="fas fa-chevron-down"></i>
+            </h5>
+            <ul class="sub_list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li class="list">
+            <h5 class="open_list">
+              <small>Connect</small>
+              <i class="fas fa-chevron-down"></i>
+            </h5>
+            <ul class="sub_list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav_two flex">
+          <a href="#" class="btn btn_colorless">Login</a>
+          <a href="#" class="btn btn_outline">Sign Up</a>
         </div>
-    </header>
-    <main>
-      <section class="first-section">
-        <article class="first-article">
-          <div class="container">
-            <h2>Designed for the future</h2>
-            <div class="rows">
-              <div class="left-side">
-                <span>introducing an extensibel editor</span>
-                <p>
-                  Blog feature an extensibly intuitive interfece wich lets you
-                </p>
-                focus on one things: creating content, The editor supportd
-                managements of multiplr blogs and allows easy manupilation of
-                rmbeds such as images, videos, and markdos. Extensibillity with
-                plugibs and themes provide easy ways to add functionalit with
-                plugins ans theme provide easy ays to add funtionality or chanege
-                the looks of the blog.
-                <span>introducing an extensibel editor</span>
-                <p>
-                  Flexbls Content management enales users to easily move through
-                  posts,interacts the usability of your log by adding customized
-                  categries,sections,format,or flow, with this functionality, you
-                  are in full control.
-                </p>
-              </div>
-              </div>
-          </div>
-        </article>
-       <aside class="fisrt-aside ">
-         <!-- <! <div class="right-side">
-          <img src="../images/illustration-editor-desktop.svg" alt="" />
-          </div>--> 
-        </aside>
-      </section>
-      <section class="second-section">
-        <article class="second-article">
-         <div class="blog-left">
-          <!-- <img src="./images/illustration-phones.svg" />--> 
-          </div>
-          
-        </article>
-        <aside class="second-aside">
-          <div class="blog-right">
-            <h1>State of the Art Infrastructure</h1>
-            <p class="blog-page">
-              Whit reliability and speed in mind. worldwide data centers provide
-              the backbone for ultra-fast connectivity. This ensures your site
-              will load instantly. no matter where your readers are. keep your
-              site competetive
+      </div>
+    </nav>
+    <div class="secondary_nav">
+      <h1 class="primary_text">A modern publishing platform</h1>
+      <p class="header_text">Grow your audience and build your online brand</p>
+      <div class="buttons">
+        <a href="#" class="btn btn_outline">Start for Free</a>
+        <a href="#" class="btn btn_white">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="design_future">
+    <div class="container">
+      <h2 class="txt_center">Designed for the future</h2>
+      <div class="container_contents grid">
+        <div class="left_contents">
+          <div class="contents_one_left">
+            <h2>Introducing an extensible editor</h3>
+            <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+              change the looks of a blog.
             </p>
           </div>
-        </aside>
-      </section>
-      <section class="third-section">
-        <article class="third-article">
-        <!-- <div class="right-side">
-            <img src="../images/illustration-editor-desktop.svg" alt="" />
+          <div class="contents_two_left">
+            <h2>Robust content management</h3>
+            <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.            
+            </p>
           </div>
-          --> 
-        </article>
-        <aside class="third-aside">
-            <h2>Designed for the future</h2>
-                <span>introducing an extensibel editor</span>
-                <p>
-                  Blog feature an extensibly intuitive interfece wich lets you
-                </p>
-                focus on one things: creating content, The editor supportd
-                managements of multiplr blogs and allows easy manupilation of
-                rmbeds such as images, videos, and markdos. Extensibillity with
-                plugibs and themes provide easy ways to add functionalit with
-                plugins ans theme provide easy ays to add funtionality or chanege
-                the looks of the blog.
-                introducing an extensibel editor
-                <p>
-                  Flexbls Content management enales users to easily move through
-                  posts,interacts the usability of your log by adding customized
-                  categries,sections,format,or flow, with this functionality, you
-                  are in full control.
-                </p>
-            
-        </aside>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="row">
-          <div class="footeritems">
-            <a href="#" class="nav-link">Blogr</a>
-          </div>
-          <div class="footeritems">
-            <a href="#" class="nav-link" >Company</a>
-            <ul>
-              <li><a class="nav-link" href="#">Company</a></li>
-              <li><a class="nav-link" href="#">Team</a></li>
-              <li><a class="nav-link" href="#">Careers</a></li>
-            </ul>
-          </div>
+        </div>
+        <div class="right_contents">
+          <img src="./images/illustration-editor-desktop.svg" alt="" class="future_image">
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="footeritems">
-            <a href="#" class="nav-link">Product</a>
-            <ul>
-              <li><a class="nav-link" href="#">Company</a></li>
-              <li><a class="nav-link" href="#">Team</a></li>
-              <li><a class="nav-link" href="#">Careers</a></li>
-            </ul>
+  <section class="blue_container-req">
+    <div class="container">
+      <div class="contents_contains_b grid">
+        <div class="left_image">
+          <img src="./images/illustration-phones.svg" alt="blogr mobile images" class="blog_img">
+        </div>
+        <div class="left_contents_b">
+          <h2>
+            State of the Art Infrastructure
+          </h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.          
+          </p>            
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pre_footer">
+    <div class="container">
+      <div class="contents_c grid">
+        <div class="contents_image">
+          <img src="./images/illustration-laptop-desktop.svg" alt="pre_footer image" class="pre_footer_img">
+        </div>
+        <div class="right_contents_c">
+          <div class="right_content">
+            <h2>Free, open, simple</h2>
+            <p>  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+              and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+            </p>
           </div>
-          <div class="footeritems">
-            <h3>Connect</h3>
-            <ul>
-              <li><a class="nav-link"  href="#">Company</a></li>
-              <li><a class="nav-link" href="#">Team</a></li>
-              <li><a class="nav-link"  href="#">Careers</a></li>
-            </ul>
+          <div class="right_content">
+            <h2>owerful tooling</h2>
+            <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+              capable of producing even the most complicated sit</p>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="./main.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-contents flex">
+        <div class="footer-logo">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="footer_list_one">
+          <h5>Product</h5>
+          <ul>
+            <li>
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integrations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_list_one">
+          <h5>Company</h5>
+          <ul>
+            <li>
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_list_one">
+          <h5>Connect</h5>
+          <ul>
+            <li>
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
 </html>
